@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <script>
+        var myDate = new Date();
+        document.write(myDate.getDate(), "<br>");
+
+        document.write(myDate.getDay(), "<br>");
+
+        document.write(myDate.getFullYear(), "<br>");
+        document.write(myDate.getHours(), "<br>");
+        document.write(myDate.getMilliseconds(), "<br>");
+        document.write(myDate.getMinutes(), "<br>");
+        document.write(myDate.getMonth(), "<br>");
+        document.write(myDate.getSeconds(), "<br>");
+        document.write(myDate.getMinutes(), "<br>");
+
+        function PrintDate()
+        {
+
+            var today = new Date();
+            var date = today.getDate();
+            var month = today.getMonth();
+            var year = today.getFullYear();
+            month++;
+            document.write("Today\'s Date: "+date+"\\"+month+"\\"+year);
+        };
+        PrintDate();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

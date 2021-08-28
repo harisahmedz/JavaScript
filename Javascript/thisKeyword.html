@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        console.log(this);
+        function Sum(){
+            var add = parseInt(2)+parseInt(2);
+            console.log("sum of two no is. "+add);
+            console.log(this);
+        }
+        Sum();
+        */
+        const Car = {
+            name :"Toyota Corolla",
+            condition: "Good",
+            sum: function(){
+                var add = parseInt(2)+parseInt(2);
+                console.log("sum of two no is. "+add);
+                console.log(this.name);
+                console.log(this);
+            }
+        }
+        Car.sum();
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

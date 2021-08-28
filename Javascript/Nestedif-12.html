@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var username = prompt("Enter Yout Username: ");
+        var password = prompt("Enter Your Password: ");
+        if (username !="" && password != "" ){
+            if (username == "admin"){
+                if (password=="admin123")
+                {
+                    alert("Login SuccessFul");
+                    window.location.href = "https://www.google.com/";
+                }
+                else{
+                    alert("Wrong Password")
+                }
+            }
+            else{
+                alert("Wrong Username")
+            }
+        }
+        else{
+            alert("Please All the fields")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

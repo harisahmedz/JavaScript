@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "JS File/PracticeQ.js"></script>
+</head>
+<body>
+    <h2>QUESTION No.1</h2>
+    <p>Ramesh’s basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% 
+        of basic salary. Write a program to calculate his gross salary. </p>
+    <h2>Solution:</h2>
+    <input type="text" placeholder="Ramesh basic Salary" id = "bs">
+    <input type="button" value="submit" onclick="RameshSalary()"/>
+    <h4>Ramesh Dearness Allowance:<i id="da"></i> </h4>
+    <h4>Ramesh House Rent:<i id="hr"></i> </h4>
+    <h4>Ramesh Gross Salary(BS+HR+DA):<i id="GS"></i> </h4>
+    
+
+    <!---->
+
+    <h2>QUESTION No.2</h2>
+    <p>The distance between two cities (in km.) is input through the keyboard. Write a program to convert and print this distance in meters,
+         feet, inches and centimeters. <br>
+        1 km = 1000 meters <br>
+        1 km = 3280.8399 feets <br>
+        1 km = 39370.078 inches <br>
+        1 km = 100,000 Centi meters <br>
+    </p>
+    <h2>Solution:</h2>
+    <input type="text" placeholder="Enter distance" id = "distance">
+    <input type="button" value="Convert" onclick="DistanceConversion()"/>
+    <h4>In Meters:      <i id ="m"> </i></h4>
+    <h4>In Feets:       <i id ="ft"></i></h4>
+    <h4>In Inches:      <i id ="In"></i></h4>
+    <h4>In Centimeters: <i id ="cm"></i></h4>
+    <!---->
+
+    <h2>QUESTION No.3</h2>
+    <p>Temperature of a city in Fahrenheit degrees is input through the keyboard.
+         Write a program  to convert this temperature into Centigrade degrees. 
+    </p>
+    <h2>Solution:</h2>
+    <input type="text" placeholder="Enter Temperature" id = "temp">
+    <input type="button" value="Convert" onclick="TemperatureConversion()"/>
+    <h4>In Centigrade:      <i id ="c"> </i></h4>
+
+    <!---->
+
+    <h2>QUESTION No.4</h2>
+    <p>The length & breadth of a rectangle are input through the keyboard. 
+        Write a program to calculate the area & perimeter of the rectangle. 
+    </p>
+    <h2>Solution:</h2>
+    <input type="text" placeholder="Enter length" id = "length">
+    <input type="text" placeholder="Enter breadth" id = "breadth">
+    <input type="button" value="submit" onclick="Rectangle()"/>
+    <h4>Area:           <i id ="area"> </i></h4>
+    <h4>Perimeter:      <i id ="perimeter"> </i></h4>
+    <!---->
+</body>
+</html>

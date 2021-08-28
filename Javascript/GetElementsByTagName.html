@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Test(){
+            var a = document.getElementsByTagName("p");
+            for (var i = 0; i < a.length; i++)
+            {
+                a[i].style.backgroundColor = "Red";
+            }
+            
+
+        }
+    </script>
+</head>
+<body>
+    <p>this is my paragraph</p>
+    <p>this is my paragraph</p>
+    <p>this is my paragraph</p>
+    <p>this is my paragraph</p>
+
+    <input type ="button" value="click" onclick="Test()"/>
+</body>
+</html>

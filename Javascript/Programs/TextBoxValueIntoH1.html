@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function MyFunction(){
+            var fname = document.getElementById("fn").value;
+            var mname = document.getElementById("mn").value;
+            var lname = document.getElementById("ln").value;
+            var heading = document.getElementById("Display");
+            heading.innerHTML = fname +" "+ mname+" "+  lname;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="fn" placeholder="Enter First Name"/>
+        <br>
+        <br>
+        <input type="text" id="mn" placeholder="Enter Middle Name"/>
+        <br>
+        <br>
+        <input type="text" id="ln" placeholder="Enter Last Name"/>
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick="MyFunction()"/>
+    </form>
+    <h1 id="Display"></h1>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Convert(){
+          var k = document.getElementById("kg").value;
+          var pounds = k *2.2046;
+          var miligram = k * 1000000;
+          var ton = k * 0.0011023;
+          var ounce = k * 35.274;
+          var p = document.getElementById("p").value=pounds;
+          var mg = document.getElementById("mg").value=miligram;
+          var t = document.getElementById("t").value=ton;
+          var ou = document.getElementById("o").value=ounce;
+        }
+    </script>
+</head>
+<body>
+    
+    <table border="4" width="500" height="300" align="center">
+        <form>
+            <tr><th colspan="2">Welcome to Online Weight Convertor</th></tr>
+           
+           <tr> 
+                <td>Kilogram: </td>
+                <td><input type="text" id="kg"/>
+                <input type="button" value="Convert" onclick="Convert()">
+                </td>
+            </tr>
+            <tr> 
+                <td>Pound: </td>
+                <td><input type="text" id="p"/></td>
+            </tr>
+            <tr> 
+                <td>Miligram: </td>
+                <td><input type="text" id="mg"/></td>
+            </tr>
+            <tr> 
+                <td>Ton: </td>
+                <td><input type="text" id="t"/></td>
+            </tr>
+            <tr> 
+                <td>Ounce: </td>
+                <td><input type="text" id="o"/></td>
+            </tr>
+
+        </form>
+    </table>
+</body>
+</html>

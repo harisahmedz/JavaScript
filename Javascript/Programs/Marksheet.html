@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Check(){
+            var name = document.getElementById("n").value;
+            var fname = document.getElementById("fn").value;
+            var standard = document.getElementById("c").value;
+            var roll = document.getElementById("r").value;
+
+            var maths = document.getElementById("ma").value;
+            var phy = document.getElementById("ph").value;
+            var chem = document.getElementById("ch").value;
+            var eng = document.getElementById("en").value;
+            var urdu = document.getElementById("ur").value;
+
+            var heading1 = document.getElementById("display1");
+            var heading2 = document.getElementById("display2");
+            var heading3 = document.getElementById("display3");
+            var heading4 = document.getElementById("display4");
+            var heading5 = document.getElementById("display5");
+            var heading6 = document.getElementById("display6");
+            var heading7 = document.getElementById("display7");
+            var heading8 = document.getElementById("display8");
+            var heading9 = document.getElementById("display9");
+            
+            var obtained = parseInt(maths)+parseInt(eng)+parseInt(urdu)+parseInt(chem)+parseInt(phy);
+            percentage = (obtained/500)*100;
+
+
+            heading1.innerHTML ="Your name is "+name ;
+            heading2.innerHTML = "Your Father Name is "+fname;
+            heading3.innerHTML = "Your Class is: "+standard ;
+            heading4.innerHTML = "Your Roll Number is: "+ roll;
+            heading5.innerHTML = "Your Obtained Marks is: "+obtained;
+            heading6.innerHTML = "Your Percentage is "+percentage+"%";
+            //heading7.innerHTML = ;
+            if (percentage > 80){
+                heading7.innerHTML ="A+ Grade" ;
+                heading8.innerHTML ="Excellent" ;
+            }
+            else if (percentage > 70){
+                heading7.innerHTML ="A Grade" ;
+                heading8.innerHTML ="Good" ;
+            }
+            else if (percentage > 60){
+                heading7.innerHTML ="Nice" ;
+                heading8.innerHTML ="" ;
+            }
+            else if (percentage > 50){
+                heading7.innerHTML ="C Grade" ;
+                heading8.innerHTML ="Improve Yourselve" ;
+            }
+            else if (percentage > 40){
+                heading7.innerHTML ="D Grade" ;
+                heading8.innerHTML ="Try Harder" ;
+            }
+            else if (percentage > 33){
+                heading7.innerHTML ="E Grade" ;
+                heading8.innerHTML ="Try Harder" ;
+            }
+            else{
+                heading7.innerHTML ="Fail" ;
+                heading8.innerHTML ="Improve Yourselve. Try harder" ;
+            }
+            var supply = 0;
+            supplies = new Array(5);
+            i = 0
+            if (parseInt(maths) < 33){
+                supply++;
+                supplies[i]= "Maths";
+                i++;
+            }
+            if (parseInt(chem) < 33){
+                supply++;
+                supplies[i]= "Chemistry";
+                i++;
+            }
+            if (parseInt(eng) < 33){
+                supply++;
+                supplies[i]= "English";
+                i++;
+            }
+            if (parseInt(phy) < 33){
+                supply++;
+                supplies[i]= "physics";
+                i++;
+            }
+            if (parseInt(urdu) < 33){
+                supply++;
+                supplies[i]= "Urdu";
+                i++;
+            }
+            heading8.innerHTML ="You have "+supply+" Supplies ("+supplies+")" ;
+            
+        }
+
+    </script>
+</head>
+<body>
+    <table border="3" width= "400", height ="600">
+        <form action="">
+            <tr><th colspan="2">Marksheet</th></tr>
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" id="n"></td>
+            </tr>
+            <tr>
+                <td><label>Father Name:</label></td>
+                <td><input type="text" id="fn"></td>
+            </tr>
+            <tr>
+                <td><label>Class:</label></td>
+                <td><input type="text" id="c"></td>
+            </tr>
+            <tr>
+                <td><label>Roll Number:</label></td>
+                <td><input type="text" id="r"></td>
+            </tr>
+            <tr>
+                <td><label>Maths Marks:</label></td>
+                <td><input type="text" id="ma"></td>
+            </tr>
+            <tr>
+                <td><label>Physics Marks:</label></td>
+                <td><input type="text" id="ph"></td>
+            </tr>
+            <tr>
+                <td><label>Chemistry Marks:</label></td>
+                <td><input type="text" id="ch"></td>
+            </tr>
+            <tr>
+                <td><label>English Marks:</label></td>
+                <td><input type="text" id="en"></td>
+            </tr>
+            <tr>
+                <td><label>Urdu Marks:</label></td>
+                <td><input type="text" id="ur"></td>
+            </tr>
+            <tr>
+
+
+                   <td colspan="2" align="center"><input type="button" value = "submit" id="result" onclick="Check()"></td>
+           
+
+             </tr>
+        </form>
+    </table>
+    <h2 id = "display1"></h2>
+    <h2 id = "display2"></h2>
+    <h2 id = "display3"></h2>
+    <h2 id = "display4"></h2>
+    <h2 id = "display5"></h2>
+    <h2 id = "display6"></h2>
+    <h2 id = "display7"></h2>
+    <h2 id = "display8"></h2>
+    <h2 id = "display9"></h2>
+    
+</body>
+</html>

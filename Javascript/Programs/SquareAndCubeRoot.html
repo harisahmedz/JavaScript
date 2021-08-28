@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function squareRoot(){
+            var textValue = document.getElementById("txt").value;
+            var sqR = textValue*textValue;
+            var ans = document.getElementById("ans");
+            ans.innerHTML = sqR;
+        }
+        function cubeRoot(){
+            var textValue = document.getElementById("txt").value;
+            var cubeR = textValue*textValue*textValue;
+            var ans = document.getElementById("ans");
+            ans.innerHTML = cubeR;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter Number" id="txt"/><br>
+    <input type ="button" value ="Square" onclick="squareRoot()">
+    <input type ="button" value ="Cube" onclick="cubeRoot()"><br>
+    <h1>Answer</h1>
+    <h2 id="ans"></h2>
+</body>
+</html>

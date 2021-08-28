@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(){
+            var un = document.getElementById("un").value;
+            var pass = document.getElementById("pass").value;
+            if (un == "admin" && pass == "admin123"){
+                alert("You have successfully Login!!");
+                window.open("DocumentObject.html", "_self");
+            }
+            else{
+                alert("Login Failed!!");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <label>Username</label>
+    <input type ="text" id = "un"/>
+    <label>Password</label>
+    <input type="password" id = "pass"/>
+    <input type="button" value="Sign in" onclick="test()"/>
+
+</body>
+</html>

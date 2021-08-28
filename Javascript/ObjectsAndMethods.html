@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n = prompt("Enter Name of a car: ");
+        var c = prompt("Enter Color of a car: ");
+        var company = prompt("Enter Company of a car: ");
+        var price = prompt("Enter price of a car: ");
+
+        var car = new Object();
+        car.name = n
+        car.color =  c
+        car.company =company;
+        car.price = price;
+        car.discount = function(){
+            var amount = car.price-5000;
+            document.write(amount);
+        }
+        document.write(car.name+ " price:"+car.price+ " After Discount: ");
+        car.discount();
+
+        var bn = prompt("Enter Name of a Bike: ");
+        var bc = prompt("Enter Color of a Bike: ");
+        var bcompany = prompt("Enter Company of a Bike: ");
+        var bprice = prompt("Enter price of a Bike: ");
+
+        var bike = {
+            name : bn,
+            color : bc,
+            Company:bcompany,
+            price: bprice,
+            discountBike:function(){
+                var amount = bike.price-5400;
+                 document.write(amount);
+            }
+        };
+        document.write(bike.name+ " price:"+bike.price+ " After Discount: ");
+        bike.discount();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

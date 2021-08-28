@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bulb_On(){
+            var on = document.getElementById("img");
+            on.src = "images\\bulbOn.jpg";
+        }
+        function bulb_Off(){
+            var off = document.getElementById("img");
+            off.src = "images\\bulbOff.jpg";
+        }
+    </script>
+</head>
+<body>
+    <img src="images\bulbOff.jpg" id="img"/>
+    <input type="button" value="On" onclick="bulb_On()"/>
+    <input type="button" value="OFF" onclick="bulb_Off()"/>
+
+</body>
+</html>

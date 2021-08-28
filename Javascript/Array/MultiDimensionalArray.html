@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var persons = [
+            ["Ali", "Karachi", 23],
+            ["Ahmed","Lahore",20],
+            ["Khan", "Multan", 30],
+            ];
+
+        document.write(persons[0]+ "<br>")
+        document.write(persons[0][0] + "-"+persons[0][1] + "-"+persons[0][2] + "<br>")
+       
+        var people = new Array(3);
+        people[0] = new Array("Noman", "Hyderabad");
+        people[1] = new Array("Muzzamil", "Hyderabad");
+        people[2] = new Array("Adeel", "Hyderabad");
+        document.write(people[0][0]+"'s"+" City is "+people[0][1]+ "<br>");
+  
+        for (i = 0; i <persons.length; i++)
+        {
+            for (j = 0; j < persons[i].length; j++){
+                document.write("<ul> <li>"+persons[i][j]+"</li></ul>")
+            }
+        }
+        document.write("-----------"+ "<br>")
+        for (var rows in people){
+            for(var columns in people[rows]){
+                document.write("<ul> <li>"+persons[rows][columns]+"</li></ul>")  
+            }
+        }
+
+  </script>
+</head>
+<body>
+    
+</body>
+</html>

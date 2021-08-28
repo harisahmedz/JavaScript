@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunc(){
+            var p1 = document.getElementById("para");
+            p1.innerHTML = "You are Awesome";
+            p1.style.color = "Red"
+            p1.style.fontWeight = 800;
+            p1.style.fontSize = 20;
+            p1.style.backgroundColor = "yellow";
+            p1.style.textAlign = "center";
+        }
+    </script>
+</head>
+<body>
+    <p id= "para">Welcom To JS</p>
+    <input type="button" value="Click" onclick="myFunc()"/>
+    
+</body>
+</html>
