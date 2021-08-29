@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function mul(x,y){
+            document.write(x*y+"<br>");
+         }
+         mul(4);// problem
+
+         
+         function mult(x,y){
+            y =(typeof y !=='undefined') ? y:1
+            document.write("Y:"+y+"\t");
+            document.write(x*y+"<br>");
+         }
+         mult(4);
+
+         function multiply (x, y=2){
+            document.write(x*y+"<br>");
+         }
+         multiply(4);
+
+         const multi = (x,y=4)=>{
+            document.write(x*y+"<br>");
+         }
+         multi(23,3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let fname = "Haris";
+    let lname = "Ahmed";
+    document.write("My name is: "+fname+" "+lname+"<br>");
+
+    document.write(`My name is: ${fname} ${lname} <br>`);//ES6
+
+    let a = 20;
+    let b = 30;
+
+    document.write("Fifty is "+(a+b)+" and not "+(2*(a+b)+"."));
+    document.write(`Fifty is ${a+b} and
+    not ${2* a+b} <br>`);
+
+    //es6 string methods
+    const firstname = `${fname}`;
+
+    document.write(`${fname}`.startsWith('H'));
+    document.write(`<br>`)
+    document.write(firstname.endsWith('s'));
+    document.write(`<br>`)
+    document.write(firstname.includes('Har'));
+    document.write(`<br>`)
+    document.write(`${fname} ${lname} `.repeat(10));
+    </script>
+<body>
+    
+</body>
+</html>

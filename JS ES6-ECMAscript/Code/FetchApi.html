@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getCovidData(indexx){
+            fetch("https://api.covid19api.com/summary").then((apidata)=>{
+           // document.write(apidata);
+            return apidata.json();
+    
+        }).then((actualData)=>{
+            //console.log(actualData.Countries[129]);
+            const myData = actualData.Countries[`${indexx}`];
+           document.getElementById("apiPakistan").innerHTML = `Name of the country is ${myData.Country}
+             Total Confirmed Cases is ${myData.TotalConfirmed} and Total Confirmed Death is ${myData.TotalDeaths} `;
+        }).catch((error)=>{
+            console.log(error());
+        });
+    
+        }
+        
+        getCovidData(8);
+        getCovidData(129);
+        
+    </script>
+</head>
+<body>
+    <p id="apiPakistan"></p>
+</body>
+</html>

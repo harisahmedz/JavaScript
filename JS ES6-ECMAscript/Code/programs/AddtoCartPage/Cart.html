@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="bg-light">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!--Left side div-->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5">
+                        <div class="card p-4">
+                            <h2 class="py-4 font-weight-bold"> Cart(2 items)</h2>
+                            <div class="row">
+                                <!--Cart images-->
+                                <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                    <img src="images/blacktee.webp" class="img-fluid" alt="cart fluid" />        
+                                 </div>
+                                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!--Product Name-->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name">Black T-Shirt</h1>
+                                            <p class="mb-2">T-Shirt - Black Plain</p>
+                                            <p class="mb-2">Color: Black</p>
+                                            <p class="mb-2">Size: M</p>
+                                            <p class="mb-2"></p>
+                                        </div>
+                                        <!--Quantity Increment-->
+                                        <div class="col-6">
+                                            <ul class="pagination justify-content-end  set_quantity">
+                                                <li class="page-item">
+                                                    <button class="page-link"  onclick="Decrement('textBox', 'itemValue')"><i class="fas fa-minus"></i></button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <input type="text" value= "0"  id="textBox" class="page-link">
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link" onclick="Increment('textBox', 'itemValue')" ><i class="fas fa-plus"></i></button>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                    <!--remove and move price-->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fas fa-trash-alt"></i> Remove Item</p>
+                                            <p><i class="fas fa-heart"></i> Move To Wish List</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>$<span id="itemValue">0.00</span></h3>
+                                        </div>
+                                    </div>
+
+                                 </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--product-->
+                        <div class="card p-4">
+                            
+                            <div class="row">
+                                <!--Cart images-->
+                                <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                    <img src="images/blacktee.webp" class="img-fluid" alt="cart fluid" />        
+                                 </div>
+                                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!--Product Name-->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name">Black T-Shirt</h1>
+                                            <p class="mb-2">T-Shirt - Black Plain</p>
+                                            <p class="mb-2">Color: Black</p>
+                                            <p class="mb-2">Size: M</p>
+                                            <p class="mb-2"></p>
+                                        </div>
+                                        <!--Quantity Increment-->
+                                        <div class="col-6">
+                                            <ul class="pagination justify-content-end  set_quantity">
+                                                <li class="page-item">
+                                                    <button class="page-link"  onclick="Decrement('textBox1', 'itemValue1')"><i class="fas fa-minus"></i></button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <input type="text" value= "0"  id="textBox1" class="page-link">
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link" onclick="Increment('textBox1','itemValue1')" ><i class="fas fa-plus"></i></button>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                    <!--remove and move price-->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fas fa-trash-alt"></i> Remove Item</p>
+                                            <p><i class="fas fa-heart"></i> Move To Wish List</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>$<span id="itemValue1">0.00</span></h3>
+                                        </div>
+                                    </div>
+
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Right side div-->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="right_side p-3 shadow big-white">
+                            <h2 class="product_name mb-5">Total Amount of</h2>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Product Amount</p>
+                                <p>$<span id="product_total_amt">0.00</span></p>
+                            </div>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Shipping Charge</p>
+                                <p>$<span id="shipping_charge">50.0</span></p>
+                            </div>
+                            <hr>
+                            <div class="total-amt d-flex justify-content-between font-weight-bold">
+                                <p>Total Amount(inc. VAT)</p>
+                                <p>$<span id="total_cart_amt">0.00</span></p>
+                            </div>
+                            <button class="btn btn-primary text-uppercase">Checkout</button>
+                        </div>
+                        <!--Discount Code Part-->
+<!-- discount code part -->
+                        <div class="discount_code mt-3 shadow">
+                            <div class="card">
+                                <div class="card-body">
+                                        <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            Add a discount code (optional)
+                                            <span><i class="fas fa-chevron-down pt-1"></i></span>
+                                        </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="mt-3">
+                                            <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+                                            <small id="error_trw" class="text-dark mt-3">code is thapa</small>
+                                        
+                                        </div>
+                                        <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Discount End Code-->
+                        <div class="mt-3 shadow p-3 big-white">
+                            <div class="pt-4">
+                                <h5 class="mb-4">Expected Delivery Date</h5>
+                                <p>July 27th 2020 - July 29th 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    
+    <script src="JS/script.js"></script>
+    
+
+</body>
+</html>

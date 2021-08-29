@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(a,b){
+            document.write(a+b+"<br>");
+        }
+        sum(1,2,3,4);//Problem
+
+        //ES6
+        function add(...inputs){
+            
+            total = 0
+            for(let i of inputs){
+                total+=i;
+            }
+            document.write(total);
+        }
+        add(1,2,3,4);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

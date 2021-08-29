@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const getRollNo = () =>{
+            setTimeout(()=>{
+                let rollNo = [1,2,3,4,5];
+                document.write(rollNo);
+                setTimeout((rollno)=>{
+                    const BioData = {
+                        name: "Haris",
+                        age: 20
+                    }
+                    document.write(`My Roll no is ${rollno} and My name is ${BioData.name} and my age is ${BioData.age}`);
+                    
+                    setTimeout((name)=>{
+                        BioData.gender = "male";
+                        document.write(`My Roll no is ${rollno} and My name is ${BioData.name} and my age is ${BioData.age} and my gender is ${BioData.gender}`);
+
+                    },2000,BioData.name);
+
+                },2000,rollNo[2]);
+            },2000);
+        }
+        getRollNo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

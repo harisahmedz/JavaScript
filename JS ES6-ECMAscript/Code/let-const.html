@@ -1,0 +1,53 @@
+<script>
+    var name = "Haris";
+    document.write(name +"<br>");
+
+    let name1 = "Zain";
+    document.write(name1+"<br>");
+
+    const PI = 3.142;
+    document.write(PI+"<br>");
+
+    var naam = "Haris";
+    naam = "Zain";
+    document.write(naam+"<br>");
+
+    let Name = "Haris";
+    Name = "Zain";
+    document.write(Name+"<br>");
+
+    function modJS(love){
+        if(love){
+            let name = "Haris";
+            let sname = "Ahmed";
+
+            
+        }
+       // document.write("my name is "+name+" "+sname);//block scoop
+    }
+
+    function modJSES(love){
+        if(love){
+            var name = "Haris";
+            var sname = "Ahmed";
+        }
+        document.write("my name is "+name+" "+sname+"<br>");//function scope
+    }
+    modJSES(true);
+
+    var WhoWillWinToday = "Pakistan";
+
+    if(true){
+        var WhoWillWinToday = "NewZeaLand";
+        document.write(WhoWillWinToday+"<br>");
+    }
+    document.write(WhoWillWinToday+"<br>");
+
+    let WhoWillWinToday1 = "Pakistan";
+
+    if(true){
+        let WhoWillWinToday1 = "NewZeaLand";
+        document.write(WhoWillWinToday1+"<br>");
+    }
+    document.write(WhoWillWinToday1+"<br>");
+</script>

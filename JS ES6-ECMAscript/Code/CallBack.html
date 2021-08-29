@@ -1,0 +1,25 @@
+<script>
+    // const funA = () =>{
+    //     setTimeout(function(){
+    //         document.write(`Welcome FunA <br>`);
+    //     }, 2000);
+        
+    // }
+
+    // const funB = () =>{
+    //     document.write(`Welcome FunB`);
+    // }
+    // funA();
+    // funB();
+
+    const perOne = (friend,callfrnd)=>{
+        document.write(`I am busy. i'll callback ${friend}<br> `);
+        callfrnd();
+    }
+    const perTwo = ()=>{
+        document.write(`Hey, Whats up. I call Back you back`);
+    }
+
+    perOne("Haris",perTwo);
+    
+</script>

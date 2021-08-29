@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const bioData = {
+            name : "Haris",
+            age: 20,
+            deg: "BS-CS",
+            Hobbies :{
+                first: 'Playing Cricket',
+                second: "Coding",
+            }
+        }
+        document.write(`My name is ${bioData.name}<br>`);
+
+        let {name,age,deg, Hobbies} = bioData;
+        document.write(`My name is ${name}<br>`);
+
+        let name1,age1,deg1;
+        ({name:name1,age: age1,deg:deg1} =  bioData);
+        document.write(`My name is ${name1}<br>`); //shou
+        
+        document.write(`Hobbie No.1: ${Hobbies.first}`);
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

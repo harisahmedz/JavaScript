@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Promise 3 stages
+        //1.Pending
+        //2.Resolve
+        //3.Reject
+        
+        //executor
+        const pObj1 =  new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                let roll_no = [1,2,3,4,5];
+                resolve(roll_no);
+                //reject("Error While Communicating");
+            },2000);
+        });
+        const getBioData = (indexData) =>{
+            return new Promise((resolve, reject)=>{
+                setTimeout((indexData)=>{
+                    let biodata = {
+                        name : "Haris",
+                        age: 20
+                    }
+                    resolve(`My Roll no is ${indexData}. My name is ${biodata.name}
+                    and i am ${biodata.age} years old
+                    `);
+                },2000, indexData);
+            });
+        }
+
+        pObj1.then((rollno)=>{
+           document.write(rollno);
+           return getBioData(rollno[1]);
+        }).then((data)=>{
+                document.write(data);
+            }).catch((error)=>{
+            document.write(error);
+        })
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

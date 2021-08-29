@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                    //static bioData()
+        class Students{
+            constructor(name, age, standard){
+                this.name = name;
+                this.age = age;
+                this.standard = standard;
+
+            }
+            //instance Method
+            biodata(){
+                return `Hi i am ${this.name}. I am ${this.age} year old and i am in ${this.standard}`;
+            }
+
+        }
+
+        let obj1 = new Students ("Haris Ahmed", 20, "BSCS");
+        
+        document.write(`${obj1.biodata()} <br>`);
+
+
+        class player extends Students{
+            constructor(name, age, standard,game){
+                super(name, age, standard);
+                this.game = game;
+            }
+            play_biodata(){
+                document.write(`${super.biodata()}. I play ${this.game}`)
+            }
+        }
+
+        let obj2 = new player ("Ahmed", 20, "BSCS", "Cricket");
+        obj2.play_biodata();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
